@@ -37,10 +37,6 @@ module.exports = withCSS(
                 (config.resolve.alias['stores'] = path.join(
                     __dirname,
                     'stores'
-                )),
-                (config.resolve.alias['icon'] = path.join(
-                    __dirname,
-                    'components/icon'
                 ))
 
             return config
