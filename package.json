@@ -10,15 +10,17 @@
   },
   "dependencies": {
     "@zeit/next-css": "1.0.1",
-    "cacheable-response": "^1.6.12",
+    "@zeit/next-stylus": "^1.0.1",
+    "cacheable-response": "^1.7.2",
     "compression": "^1.7.4",
-    "cross-env": "^5.2.0",
+    "cross-env": "^5.2.1",
     "express": "^4.17.1",
-    "module-alias": "^2.2.0",
-    "next": "^9.0.2",
-    "preact": "^10.0.0-beta.3",
+    "module-alias": "^2.2.1",
+    "next": "^9.0.5",
+    "preact": "^10.0.0-rc.3",
     "preact-render-to-string": "^5.0.4",
-    "preact-ssr-prepass": "^1.0.0"
+    "preact-ssr-prepass": "^1.0.0",
+    "stylus": "^0.54.7"
   },
   "_moduleAliases": {
     "react": "node_modules/preact/compat",
@@ -30,7 +32,7 @@
     "assets": "static/assets"
   },
   "devDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   }
 }

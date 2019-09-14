@@ -1,26 +1,13 @@
-import { h } from 'preact'
-import App, { Container } from 'next/app'
+import App from "next/app"
 
 class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
-    let pageProps = {};
+	render() {
+		const { Component, pageProps } = this.props
 
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx);
-    }
-
-    return { pageProps };
-  }
-
-  render() {
-    const { Component, pageProps } = this.props;
-
-    return (
-      <Container>
-        <Component {...pageProps} />
-      </Container>
-    );
-  }
+		return (
+			<Component {...pageProps} />
+		)
+	}
 }
 
-export default MyApp;
+export default MyApp
